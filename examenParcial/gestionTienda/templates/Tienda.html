@@ -15,6 +15,7 @@
 </head>
 
 <body>
+    <!-- VENTANA DE LISTADO DE TIENDAS -->
     <div>
         <div class="container">
             <div class="row">
@@ -31,12 +32,14 @@
 
     <br>
     <div class="container mt-3">
+        <!-- BOTON AGREGAR NUEVA TIENDA -->
         <div class="row justify-content-between">
             <div class="col-2">
                 <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#nuevaTienda">Nuevo <i
                         class="fa-solid fa-plus"></i></button>
             </div>
             <!------------------------------------------------------------------------------------------------------->
+            <!-- BOTON ASIGNAR PRODUCTO A UNA TIENDA -->
             <div class="col-2">
                 <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#asignarProducto">Asignar <i
                         class="fa-solid fa-plus"></i></button>
@@ -46,6 +49,7 @@
     <div class="mt-5 container">
         <div class="row justify-content-center">
             <div class="col-15">
+                <!-- TABLA DE LISTADO DE TIENDAS -->
                 <table class="table table-bordered bg-dark text-white">
                     <thead class="text-center">
                         <th>Dirección</th>
@@ -74,6 +78,7 @@
                         {% endfor %}
                     </tbody>
                 </table>
+                <!-- BOTON DE RETORNO -->
                 <a class="mt-3 btn btn-success" href="{% url 'gestionTienda:panelNavegacion' %}">Regresar</a>
                 <br>
                 <br>
@@ -84,7 +89,7 @@
 </body>
 
 </html>
-
+<!-- VENTANA MODAL AGREGAR NUEVA TIENDA -->
 <div class="modal fade" tabindex="-1" id="nuevaTienda" data-bs-backdrop="static" data-bs-keyboard="false">
     <div class="modal-dialog">
         <div class="modal-content">
@@ -129,7 +134,7 @@
 
 <!------------------------------------------------------------------------------------------------------->
 <!------------------------------------------------------------------------------------------------------->
-
+<!-- VENTANA MODAL ASIGNAR PRODUCTO A UNA TIENDA -->
 <div class="modal fade" tabindex="-1" id="asignarProducto" data-bs-backdrop="static" data-bs-keyboard="false">
     <div class="modal-dialog">
         <div class="modal-content">

@@ -16,7 +16,7 @@
 
 <body>
     <br>
-    <!--PRODUCTOS-->
+    <!--Panel de navegacion-->
     <div class="bg-dark text-white">
         <div class="row justify-content-between w-80 p-2">
             <div class="col-4 text-white">
@@ -28,10 +28,12 @@
                     </div>
                 </div>
             </div>
+            <!-- Vista de las tiendas -->
             <div class="col-1 mt-2">
                 <h5><a class="text-white text-decoration-none" href="{% url 'gestionTienda:tienda' %}">Tiendas</a>
                 </h5>
             </div>
+            <!-- Vista de los productos -->
             <div class="col-4 mt-2">
                 <h5><a class="text-white text-decoration-none" href="{% url 'gestionTienda:productos' %}">Productos</a>
                 </h5>

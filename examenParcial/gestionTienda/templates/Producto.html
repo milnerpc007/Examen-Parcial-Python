@@ -30,6 +30,7 @@
     </div>
 
     <br>
+    <!-- Boton Agregar nuevo producto -->
     <div class="container mt-3">
         <div class="row justify-content-between">
             <div class="col-2">
@@ -41,6 +42,7 @@
     <div class="mt-5 container">
         <div class="row justify-content-center">
             <div class="col-15">
+                <!-- Listado de productos -->
                 <table class="table table-bordered bg-dark text-white">
                     <thead class="text-center">
                         <th>Descripcion</th>
@@ -69,9 +71,8 @@
                         {% endfor %}
                     </tbody>
                 </table>
+                <!-- Boton de retorno -->
                 <a class="mt-3 btn btn-success" href="{% url 'gestionTienda:panelNavegacion' %}">Regresar</a>
-                <br>
-                <br>
                 <br>
             </div>
         </div>
@@ -79,7 +80,7 @@
 </body>
 
 </html>
-
+<!-- VENTANA MODAL AGREGAR NUEVO PRODUCTO -->
 <div class="modal fade" tabindex="-1" id="nuevoProducto" data-bs-backdrop="static" data-bs-keyboard="false">
     <div class="modal-dialog">
         <div class="modal-content">
